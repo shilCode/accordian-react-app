@@ -4,15 +4,26 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    background-color: rgb(35, 33, 31);
+    flex-direction: column;
+    gap: 20px;
 }
 
+.wrapper button{
+    padding: 10px 20px;
+    background-color: #9a3939;
+    color: #ffffff;
+    font-weight: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
 .accordian{
     width:500px;
 
 }
 
 .item{
-    background-color: rgb(255, 196, 0);
+    background-color: rgb(19, 16, 5);
     margin-bottom: 10px;
     padding: 10px 20px ;
 }
