@@ -7,12 +7,12 @@ export default function StarRating({noOfStars=10}){
     const [rating,setRating]=useState(0);
     const [hover,setHover]=useState(0);
     
-    function handleMouseLeave(hover) {
-        setHover(hover);
+    function handleMouseLeave(getCurrentIndex) {
+        setHover(getCurrentIndex);
     }
 
-    function handleMouseOver(hover) {
-        setHover(hover);
+    function handleMouseOver(getCurrentIndex) {
+        setHover(getCurrentIndex);
     }
 
     function handleClick(rating) {
@@ -30,7 +30,7 @@ export default function StarRating({noOfStars=10}){
                         onMouseOver={()=>handleMouseOver(index)}
                         className={index<=(rating||hover)?'active':'inactive'}
                         onClick={()=>handleClick(index)}
-                        onMouseLeave={()=>handleMouseLeave(index)}
+                        onMouseLeave={()=>handleMouseLeave()}
 
                     />
                 })
