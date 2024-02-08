@@ -38,7 +38,7 @@ export default function RandomColorGenerator() {
     <div
       style={{
         background: color,
-        width: "100vh",
+        width: "100vw",
         height: "100vh",
       }}
     >
